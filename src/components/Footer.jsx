@@ -23,8 +23,8 @@ function Footer() {
 
             <div class="flex gap-6 text-3xl">
                 <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="hover:text-red-500"><i class="fa-brands fa-google"></i></a>
-                <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.google.com" class="hover:text-red-500"><i class="fa-brands fa-google"></i></a>
+                <a href="https://github.com/stacknaik/saurabhprojects.git" class="hover:text-gray-400"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </div>
