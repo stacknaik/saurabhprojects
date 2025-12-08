@@ -5,7 +5,7 @@ import { CartContext } from '../context/CartContext'
 function Cartpage() {
   const { selected, removeComponent } = useContext(CartContext)
 
-  const isEmpty = !selected.processor && !selected.graphics && !selected.ssd
+  const isEmpty = !selected.processor && !selected.graphics && !selected.ssd && !selected.ram
   const title = isEmpty ? 'Cart is empty' : 'Your Cart'
 
   return (
