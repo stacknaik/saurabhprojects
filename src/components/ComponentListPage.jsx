@@ -4,6 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import { processors } from "../data/processors";
 import { graphics } from "../data/graphics";
 import { ssd } from "../data/ssd";
+import { ram } from "../data/ram";
 
 import Browse from "./Browse";
 
@@ -15,6 +16,7 @@ function ComponentListPage() {
   if (type === "processor") list = processors;
   if (type === "graphics") list = graphics;
   if (type === "ssd") list = ssd;
+  if (type === "ram") list = ram;
 
   return (
     <div className="bg-black min-h-screen page-enter">
