@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { processors } from "../data/processors";
 import { graphics } from "../data/graphics";
 import { ssd } from "../data/ssd";
+import { ram } from "../data/ram";
 
 function Componentdetail() {
   const { id, type } = useParams();
@@ -12,9 +13,12 @@ function Componentdetail() {
   if (type === "processor") {
     selectedList = processors;
   } else if (type === "graphics") {
-    selectedList = graphics;
+    selectedList = graphics; 
   }else if (type === "ssd") {
     selectedList = ssd;
+  }
+  else if (type === "ram") {
+    selectedList = ram;
   }
 
   const item = selectedList.find(c => c.id === Number(id));
