@@ -7,7 +7,7 @@ import Layout from './components/Layout.jsx'
 import Hero from './components/Hero.jsx'
 import ComponentListPage from './components/ComponentListPage.jsx'
 import Componentdetail from './components/Componentdetail.jsx'
-import Cartpage from './components/cartpage.jsx'
+import Cartpage from './components/Cartpage.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

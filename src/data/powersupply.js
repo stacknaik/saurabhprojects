@@ -1,4 +1,4 @@
-export const graphics = [
+export const powersupply = [
   { id: 1, src: "/images/ps1.jpg", pname: "Intel Core i3", info: "Best for basic tasks." },
   { id: 2, src: "/images/ps2.jpg", pname: "Intel Core i9", info: "Top-tier performance." },
   { id: 3, src: "/images/ps3.jpg", pname: "Ryzen 9 5900X", info: "Flagship performance." },

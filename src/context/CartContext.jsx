@@ -1,5 +1,4 @@
 import React, { createContext, useState } from 'react'
-
 export const CartContext = createContext(null)
 
 export function CartProvider({ children }) {
@@ -7,6 +6,13 @@ export function CartProvider({ children }) {
     processor: null,
     graphics: null,
     ssd: null,
+    keyboard: null,
+    ram: null,
+    usb: null,
+    casefans: null,
+    harddrives: null,
+    cables: null,
+    powersupply: null,
   })
 
   function addComponent(type, component) {
