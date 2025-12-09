@@ -8,7 +8,9 @@ import { casefan } from "../data/casefan";
 import { harddrives } from "../data/harddrives";
 import { cables } from "../data/cables";
 import Browse from "./Browse";
-import { usb } from "../data/usb";    
+import { usb } from "../data/usb";   
+import { keyboard } from "../data/keyboard";
+import { powersupply } from "../data/powersupply"; 
 
 
 
@@ -25,6 +27,9 @@ function ComponentListPage() {
   if (type === "harddrives") list = harddrives;
   if (type === "cables") list = cables;
   if (type === "usb") list = usb;
+  if (type === "keyboard") list = keyboard;
+  if (type === "powersupply") list = powersupply;
+
 
   return (
     <div className="bg-black min-h-screen page-enter">
