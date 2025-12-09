@@ -26,10 +26,16 @@ function Navigatonpanel() {
             rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 
             transition-all duration-200 z-50">
 
-              <Link to="/processor" className="block px-4 py-2 dropdown-neon">Processor</Link>
-              <Link to="/graphics" className="block px-4 py-2 dropdown-neon">Graphics Card</Link>
-              <Link to="/ssd" className="block px-4 py-2 dropdown-neon">SSD</Link>
-              <Link to="/ram" className="block px-4 py-2 dropdown-neon">RAM</Link>
+              <Link to="/processor" className="block px-4 py-2 dropdown-neon hover:text-green-400">🖥️ Processor</Link>
+              <Link to="/graphics" className="block px-4 py-2 dropdown-neon hover:text-purple-400">🎮 Graphics Card</Link>
+              <Link to="/ssd" className="block px-4 py-2 dropdown-neon hover:text-blue-400">💾 SSD</Link>
+              <Link to="/ram" className="block px-4 py-2 dropdown-neon hover:text-yellow-400">🧠 RAM</Link>
+              <Link to="/casefan" className="block px-4 py-2 dropdown-neon hover:text-cyan-400">🌀 Case Fan</Link>
+              <Link to="/cables" className="block px-4 py-2 dropdown-neon hover:text-orange-400">🔌 Cables</Link>
+              <Link to="/powersupply" className="block px-4 py-2 dropdown-neon hover:text-red-400">⚡ Power Supply</Link>
+              <Link to="/harddrives" className="block px-4 py-2 dropdown-neon hover:text-pink-400">🗄️ Hard Drives</Link>
+              <Link to="/usb" className="block px-4 py-2 dropdown-neon hover:text-indigo-400">🔑 USB Devices</Link>
+              <Link to="/keyboard" className="block px-4 py-2 dropdown-neon hover:text-white">⌨️ Keyboard</Link>
 
             </div>
           </div>
