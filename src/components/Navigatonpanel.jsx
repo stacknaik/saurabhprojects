@@ -47,7 +47,7 @@ function Navigatonpanel() {
                 Case Fan
               </Link>
               <Link to="/cables" className="px-4 py-2 dropdown-neon flex items-center">
-                <img src="/cables.svg" alt="Cables" className="w-5 h-5 mr-2" />
+                <img src="/cable.svg" alt="Cables" className="w-5 h-5 mr-2" />
                 Cables
               </Link>
               <Link to="/powersupply" className="px-4 py-2 dropdown-neon flex items-center">
@@ -55,7 +55,7 @@ function Navigatonpanel() {
                 Power Supply
               </Link>
               <Link to="/harddrives" className="px-4 py-2 dropdown-neon flex items-center">
-                <img src="/harddrives.svg" alt="Hard Drives" className="w-5 h-5 mr-2" />
+                <img src="/harddrive.svg" alt="Hard Drives" className="w-5 h-5 mr-2" />
                 Hard Drives
               </Link>
               <Link to="/usb" className="px-4 py-2 dropdown-neon flex items-center">
