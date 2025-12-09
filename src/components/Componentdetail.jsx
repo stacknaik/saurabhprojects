@@ -5,6 +5,7 @@ import { graphics } from "../data/graphics";
 import { ssd } from "../data/ssd";
 import { ram } from "../data/ram";
 
+
 function Componentdetail() {
   const { id, type } = useParams();
 
