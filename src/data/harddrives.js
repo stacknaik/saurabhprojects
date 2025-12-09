@@ -12,4 +12,3 @@ export const harddrives = [
   { id: 11, src: "/images/h11.jpg", pname: "Intel Core i3", info: "Best for basic tasks." },
   { id: 12, src: "/images/h12.jpg", pname: "Intel Core i3", info: "Best for basic tasks." },
 ];
-h
