@@ -1,4 +1,4 @@
-export const casefancf = [
+export const casefan = [
   { id: 1, src: "/images/cf1.jpg", pname: "Intel Core i3", info: "Best for basic tasks." },
   { id: 2, src: "/images/cf2.jpg", pname: "Intel Core i9", info: "Top-tier performance." },
   { id: 3, src: "/images/cf3.jpg", pname: "Ryzen 9 5900X", info: "Flagship performance." },
