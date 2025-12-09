@@ -53,7 +53,7 @@ function Navigatonpanel() {
               <Link to="/powersupply" className="px-4 py-2 dropdown-neon flex items-center">
                 <img src="/powersupply.svg" alt="Power Supply" className="w-5 h-5 mr-2" />
                 Power Supply
-          </Link>
+              </Link>
               <Link to="/harddrives" className="px-4 py-2 dropdown-neon flex items-center">
                 <img src="/harddrives.svg" alt="Hard Drives" className="w-5 h-5 mr-2" />
                 Hard Drives
@@ -67,8 +67,8 @@ function Navigatonpanel() {
                 Keyboard
               </Link>
 
-            
-              
+
+
 
             </div>
           </div>
