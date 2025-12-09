@@ -26,10 +26,11 @@ function Navigatonpanel() {
             rounded-lg shadow-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 
             transition-all duration-200 z-50">
 
-              <Link to="/processor" className="block px-4 py-2 dropdown-neon flex items-center">
-  <img src="/ram.svg" alt="Processor" className="w-5 h-5 mr-2" />
+             <Link to="/processor" className="px-4 py-2 dropdown-neon flex items-center">
+  <img src="/path-to-icons/processor.svg" alt="Processor" className="w-5 h-5 mr-2" />
   Processor
 </Link>
+
 
               <Link to="/graphics" className="block px-4 py-2 dropdown-neon hover:text-purple-400">🎮 Graphics Card</Link>
               <Link to="/ssd" className="block px-4 py-2 dropdown-neon hover:text-blue-400">💾 SSD</Link>
