@@ -30,16 +30,51 @@ function Navigatonpanel() {
                 <img src="/processor.svg" alt="Processor" className="w-5 h-5 mr-2" />
                 Processor
               </Link>
+              <Link to="/graphics" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/graphics.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
+              <Link to="/ssd" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/ssd.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
+    
+              <Link to="/processor" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/processor.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
+              <Link to="/ram" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/ram.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
 
-              <Link to="/graphics" className="block px-4 py-2 dropdown-neon hover:text-purple-400">🎮 Graphics Card</Link>
-              <Link to="/ssd" className="block px-4 py-2 dropdown-neon hover:text-blue-400">💾 SSD</Link>
-              <Link to="/ram" className="block px-4 py-2 dropdown-neon hover:text-yellow-400">🧠 RAM</Link>
-              <Link to="/casefan" className="block px-4 py-2 dropdown-neon hover:text-cyan-400">🌀 Case Fan</Link>
-              <Link to="/cables" className="block px-4 py-2 dropdown-neon hover:text-orange-400">🔌 Cables</Link>
-              <Link to="/powersupply" className="block px-4 py-2 dropdown-neon hover:text-red-400">⚡ Power Supply</Link>
-              <Link to="/harddrives" className="block px-4 py-2 dropdown-neon hover:text-pink-400">🗄️ Hard Drives</Link>
-              <Link to="/usb" className="block px-4 py-2 dropdown-neon hover:text-indigo-400">🔑 USB Devices</Link>
-              <Link to="/keyboard" className="block px-4 py-2 dropdown-neon hover:text-white">⌨️ Keyboard</Link>
+              <Link to="/casefan" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/casefan.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
+              <Link to="/cables" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/cables.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
+              <Link to="/powersupply" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/powersupply.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+          </Link>
+              <Link to="/harddrives" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/harddrives.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
+              <Link to="/usb" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/usb.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
+              <Link to="/keyboard" className="px-4 py-2 dropdown-neon flex items-center">
+                <img src="/keyboard.svg" alt="Processor" className="w-5 h-5 mr-2" />
+                Processor
+              </Link>
+
+            
+              
 
             </div>
           </div>
