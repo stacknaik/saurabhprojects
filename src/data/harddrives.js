@@ -1,4 +1,4 @@
-export const graphics = [
+export const harddrives = [
   { id: 1, src: "/images/h1.jpg", pname: "Intel Core i3", info: "Best for basic tasks." },
   { id: 2, src: "/images/h2.jpg", pname: "Intel Core i9", info: "Top-tier performance." },
   { id: 3, src: "/images/h3.jpg", pname: "Ryzen 9 5900X", info: "Flagship performance." },

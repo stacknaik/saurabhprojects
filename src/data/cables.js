@@ -1,4 +1,4 @@
-export const graphics = [
+export const cables = [
   { id: 1, src: "/images/c1.jpg", pname: "Intel Core i3", info: "Best for basic tasks." },
   { id: 2, src: "/images/c2.jpg", pname: "Intel Core i9", info: "Top-tier performance." },
   { id: 3, src: "/images/c3.jpg", pname: "Ryzen 9 5900X", info: "Flagship performance." },
