@@ -5,6 +5,8 @@ import { processors } from "../data/processors";
 import { graphics } from "../data/graphics";
 import { ssd } from "../data/ssd";
 import { ram } from "../data/ram";
+import { casefan } from "../data/casefans";
+import { cables } from "../data/cables";
 
 import Browse from "./Browse";
 
