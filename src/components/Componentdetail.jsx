@@ -4,7 +4,12 @@ import { processors } from "../data/processors";
 import { graphics } from "../data/graphics";
 import { ssd } from "../data/ssd";
 import { ram } from "../data/ram";
-
+import {usb} from "../data/usb";
+import { casefan } from "../data/casefan";
+import { harddrives } from "../data/harddrives";
+import { cables } from "../data/cables";
+import { keyboard } from "../data/keyboard";
+import { powersupply} from "../data/powersupply";
 
 function Componentdetail() {
   const { id, type } = useParams();
@@ -15,12 +20,32 @@ function Componentdetail() {
     selectedList = processors;
   } else if (type === "graphics") {
     selectedList = graphics; 
-  }else if (type === "ssd") {
+  }
+  else if (type === "ssd") {
     selectedList = ssd;
   }
   else if (type === "ram") {
     selectedList = ram;
   }
+  else if (type === "usb") {
+    selectedList = usb;
+  }
+  else if (type === "casefan") {
+    selectedList = casefan;
+  }
+  else if (type === "harddrives") {
+    selectedList = harddrives;
+  }
+  else if (type === "cables") {
+    selectedList = cables;
+  }
+  else if (type === "keyboard") {
+    selectedList = keyboard;
+  }
+  else if (type === "powersupply") {
+    selectedList = powersupply;
+  }
+  
 
   const item = selectedList.find(c => c.id === Number(id));
 

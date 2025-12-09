@@ -1,14 +1,16 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-
 import { processors } from "../data/processors";
 import { graphics } from "../data/graphics";
 import { ssd } from "../data/ssd";
 import { ram } from "../data/ram";
-import { casefan } from "../data/casefans";
+import { casefan } from "../data/casefan";
+import { harddrives } from "../data/harddrives";
 import { cables } from "../data/cables";
-
 import Browse from "./Browse";
+import { usb } from "../data/usb";    
+
+
 
 function ComponentListPage() {
   const { type } = useParams();
@@ -19,6 +21,10 @@ function ComponentListPage() {
   if (type === "graphics") list = graphics;
   if (type === "ssd") list = ssd;
   if (type === "ram") list = ram;
+  if (type === "casefan") list = casefan;
+  if (type === "harddrives") list = harddrives;
+  if (type === "cables") list = cables;
+  if (type === "usb") list = usb;
 
   return (
     <div className="bg-black min-h-screen page-enter">
