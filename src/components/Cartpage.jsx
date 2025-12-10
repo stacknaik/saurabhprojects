@@ -6,7 +6,7 @@ function Cartpage() {
   const { selected, removeComponent } = useContext(CartContext)
 
   const isEmpty = !selected.processor && !selected.graphics && !selected.ssd && !selected.ram 
-   && !selected.usb && !selected.casefans && !selected.harddrives && !selected.cables && !selected.keyboard && !selected.powersupply;
+   && !selected.usb && !selected.casefan && !selected.harddrives && !selected.cables && !selected.keyboard && !selected.powersupply;
   const title = isEmpty ? 'Cart is empty' : 'Your Cart'
 
   return (
