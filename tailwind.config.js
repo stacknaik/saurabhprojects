@@ -48,6 +48,8 @@ animation: {
   slideLeftCrazy: 'slideLeftCrazy 1s ease-out',
   slideRightCrazy: 'slideRightCrazy 1s ease-out',
   textWave: 'textWave 3s ease-in-out infinite',
+
+  
 }
 },
   },
