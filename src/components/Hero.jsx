@@ -1,65 +1,132 @@
+import { motion } from "framer-motion";
 import React from "react";
 
-function Hero() {
+export function Hero() {
+  // Animation Variants
+  const slideLeft = {
+    hidden: { opacity: 0, x: -80 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.8 } }
+  };
+
+  const slideRight = {
+    hidden: { opacity: 0, x: 80 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.8 } }
+  };
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+  };
+
   return (
     <div className="bg-black text-white overflow-hidden relative">
 
-      {/* Background Moving Glow */}
-      <div className="absolute w-[600px] h-[600px] bg-pink-500 blur-[180px] opacity-20 animate-pulse-slow top-10 -left-40 rounded-full"></div>
-      <div className="absolute w-[500px] h-[500px] bg-blue-500 blur-[200px] opacity-20 animate-pulse-slow bottom-10 -right-40 rounded-full"></div>
+      {/* Background Glow */}
+      <motion.div
+        className="absolute w-[600px] h-[600px] bg-pink-500 blur-[180px] opacity-20 rounded-full"
+        animate={{ opacity: [0.2, 0.35, 0.2] }}
+        transition={{ duration: 6, repeat: Infinity }}
+        style={{ top: 40, left: -160 }}
+      />
+
+      <motion.div
+        className="absolute w-[500px] h-[500px] bg-blue-500 blur-[200px] opacity-20 rounded-full"
+        animate={{ opacity: [0.2, 0.35, 0.2] }}
+        transition={{ duration: 6, repeat: Infinity }}
+        style={{ bottom: 40, right: -160 }}
+      />
 
       {/* HERO SECTION */}
       <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 md:py-20">
 
-        <div className="max-w-md mb-12 md:mb-0 crazy-slide-left">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 crazy-text">
+        <motion.div
+          className="max-w-md mb-12 md:mb-0"
+          variants={slideLeft}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.h1
+            className="text-4xl md:text-5xl font-bold mb-6"
+            variants={fadeUp}
+          >
             CREATE YOUR PC
-          </h1>
+          </motion.h1>
 
-          <p className="text-gray-300 mb-6 text-base md:text-lg crazy-fade">
+          <motion.p
+            className="text-gray-300 mb-6 text-base md:text-lg"
+            variants={fadeUp}
+            transition={{ delay: 0.2 }}
+          >
             Build your dream PC with ease. Choose components, compare performance,
             and customize every part.
-          </p>
+          </motion.p>
 
-          <button className="neon-btn px-8 py-3 rounded-lg text-lg crazy-button">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="neon-btn px-8 py-3 rounded-lg text-lg"
+          >
             Read more
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
-        <div className="max-w-xl crazy-slide-right">
-          <img
+        <motion.div
+          className="max-w-xl"
+          variants={slideRight}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.img
             src="/icon/img1.jpg"
-            className="w-full rounded-2xl shadow-xl border border-gray-700 
-                       animate-crazyFloat hover:scale-110 transition duration-300
-                       hover:animate-imageShake"
+            className="w-full rounded-2xl shadow-xl border border-gray-700"
+            animate={{ y: [0, -20, 0] }}
+            transition={{ repeat: Infinity, duration: 4 }}
+            whileHover={{
+              scale: 1.1,
+              rotate: [0, -1, 1, 0],
+              transition: { duration: 0.4 }
+            }}
           />
-        </div>
+        </motion.div>
       </section>
 
       {/* SECOND SECTION */}
       <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16">
 
-        <div className="max-w-md mb-10 md:mb-0 crazy-slide-left">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 crazy-text">
+        <motion.div
+          className="max-w-md mb-10 md:mb-0"
+          variants={slideLeft}
+          initial="hidden"
+          animate="show"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Next-Gen 3D Build
           </h2>
 
-          <p className="text-gray-300 text-base md:text-lg mb-4 crazy-fade">
+          <p className="text-gray-300 text-base md:text-lg mb-4">
             Beginner friendly for users to add components of their choice and
             customize PC builds according to their needs.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="max-w-md crazy-slide-right">
-          <img
+        <motion.div
+          className="max-w-md"
+          variants={slideRight}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.img
             src="/icon/3dmodel.jpg"
-            className="w-full rounded-2xl border border-gray-700 
-                       shadow-[0_10px_30px_rgba(255,255,255,0.15)]
-                       hover:shadow-[0_25px_60px_rgba(255,255,255,0.25)]
-                       hover:scale-110 transition duration-300
-                       animate-crazyFloatSlow hover:animate-imageShake"
+            className="w-full rounded-2xl border border-gray-700 shadow-[0_10px_30px_rgba(255,255,255,0.15)]"
+            animate={{ y: [0, -15, 0] }}
+            transition={{ repeat: Infinity, duration: 5 }}
+            whileHover={{
+              scale: 1.1,
+              rotate: [0, 1, -1, 0],
+              transition: { duration: 0.4 }
+            }}
           />
-        </div>
+        </motion.div>
 
       </section>
     </div>
