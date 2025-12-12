@@ -116,6 +116,3 @@ body, html {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-.hover\\:animate-imageShake:hover {
-  animation: imageShake 0.4s;
-}
